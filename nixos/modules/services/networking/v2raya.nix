@@ -23,8 +23,8 @@ in
       };
 
       extraArgs = mkOption {
-        description = "Extra command line arguments.";
-        type = listOf str;
+        description = "Extra command line arguments. see `v2raya --help` for more details.";
+        type = lib.types.listOf lib.types.str;
         default = [ "--log-disable-timestamp" ];
 
         example = [
